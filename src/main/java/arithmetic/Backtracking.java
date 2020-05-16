@@ -16,7 +16,7 @@ public class Backtracking {
 
     //回溯
     public static void backTrack(List<List<Integer>> result, int[] nums, LinkedList<Integer> path) {
-        //结束条件：组合的深度等于所以元素的数量
+        //结束条件:path路径中节点数量等于元素数量
         if (path.size() == nums.length) {
             result.add(new LinkedList(path));
             return;
